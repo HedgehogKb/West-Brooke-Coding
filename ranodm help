@@ -1,0 +1,24 @@
+//Weapon Skin
+
+
+var ItemName = "§bRune Blade Skin"
+var SkinItemID = "pdmod:rune_blade"
+var AllowedWeaponIDs = [2,9] //Daggers 1, Swords 2, Hammers and Clubs: 3, Flails and Whips: 4, Reach Weapons: (Spears, Halberds): 5, Scythes: 6, Great Weapons: 7, Special: 8, Wand: 9
+
+
+function init(t){
+    t.item.setLore(["This is a weapon skin, use a skin anvil to apply it. Place skin in offhand and weapon in mainhand.","Applies to:§6 Swords, Wands",":","§7A sword with glowing runes along its blade. What will you make of it?"]);
+    t.item.setCustomName(ItemName)
+    t.item.setTexture(SkinItemID)
+    t.item.setDurabilityShow(false)
+    t.item.getTempdata().put("AllowedWeaponIDs",AllowedWeaponIDs)
+    t.item.getStoreddata().put("WeaponSkinNaeme",SkinItemID)
+}
+
+
+/give @p customnpcs:scripted_item{ScriptEnabled: 1b, Scripts: [{Console: [], Script: '//Weapon Skin\n\n\nvar ItemName = "Rune Blade Skin"\nvar SkinItemID = "pdmod:rune_blade"\nvar AllowedWeaponIDs = [2,9] //Daggers 1, Swords 2, Hammers and Clubs: 3, Flails and Whips: 4, Reach Weapons: (Spears, Halberds): 5, Scythes: 6, Great Weapons: 7, Special: 8, Wand: 9\n\n\nfunction init(t){\n    t.item.setLore(["This is a weapon skin, use a skin anvil to apply it. Place skin in offhand and weapon in mainhand.","Applies to: Swords, Wands",":","A sword with glowing runes along its blade. What will you make of it?"]);\n    t.item.setCustomName(ItemName)\n    t.item.setTexture(SkinItemID)\n    t.item.setDurabilityShow(false)\n    t.item.getTempdata().put("AllowedWeaponIDs",AllowedWeaponIDs)\n    t.item.getStoreddata().put("WeaponSkinNaeme",SkinItemID)\n}\n', ScriptList: []}], ScriptTexture: "pdmod:rune_blade", ScriptLanguage: "ECMAScript"}
+{ScriptEnabled: 1b, Scripts: [{Console: [], Script: 'var ItemName = "Rune Blade Skin"var SkinItemID = "pdmod:rune_blade"var AllowedWeaponIDs = [2,9]function init(t){    t.item.setLore(["This is a weapon skin, use a skin anvil to apply it. Place skin in offhand and weapon in mainhand.","Applies to: Swords, Wands",":","A sword with glowing runes along its blade. What will you make of it?"]);    t.item.setCustomName(ItemName)    t.item.setTexture(SkinItemID)    t.item.setDurabilityShow(false)    t.item.getTempdata().put("AllowedWeaponIDs",AllowedWeaponIDs)    t.item.getStoreddata().put("WeaponSkinNaeme",SkinItemID)}', ScriptList: []}], ScriptTexture: "pdmod:rune_blade", ScriptLanguage: "ECMAScript"}
+
+{ForgeCaps: {"customnpcs:itemscripteddata": {ScriptEnabled: 1b, DurabilityValue: 1.0d, Scripts: [{Script: 'var ItemName = "Rune Blade Skin"; var SkinItemID = "pdmod:rune_blade";var AllowedWeaponIDs = [2,9] ;function init(t){t.item.setLore(["This is a weapon skin, use a skin anvil to apply it. Place skin in offhand and weapon in mainhand.","Applies to: Swords, Wands",":","A sword with glowing runes along its blade. What will you make of it?"]);t.item.setCustomName(ItemName);t.item.setTexture(SkinItemID);t.item.setDurabilityShow(false);t.item.getTempdata().put("AllowedWeaponIDs",AllowedWeaponIDs);t.item.getStoreddata().put("WeaponSkinNaeme",SkinItemID)}', Console: [], ScriptList: []}], ScriptTexture: "pdmod:rune_blade", ItemColor: -1, MaxStackSize: 64, StoredData: {WeaponSkinNaeme: "pdmod:rune_blade"}, DurabilityShow: 0b, ScriptLanguage: "ECMAScript", DurabilityColor: -1}}, id: "customnpcs:scripted_item", Count: 1b, tag: {ScriptedData: {ScriptEnabled: 1b, Scripts: [{Console: [], Script: 'var ItemName = "Rune Blade Skin"; var SkinItemID = "pdmod:rune_blade";var AllowedWeaponIDs = [2,9] ;function init(t){t.item.setLore(["This is a weapon skin, use a skin anvil to apply it. Place skin in offhand and weapon in mainhand.","Applies to: Swords, Wands",":","A sword with glowing runes along its blade. What will you make of it?"]);t.item.setCustomName(ItemName);t.item.setTexture(SkinItemID);t.item.setDurabilityShow(false);t.item.getTempdata().put("AllowedWeaponIDs",AllowedWeaponIDs);t.item.getStoreddata().put("WeaponSkinNaeme",SkinItemID)}', ScriptList: []}], ScriptTexture: "pdmod:rune_blade", ScriptLanguage: "ECMAScript"}, display: {Lore: ['{"translate":"This is a weapon skin, use a skin anvil to apply it. Place skin in offhand and weapon in mainhand."}', '{"translate":"Applies to: Swords, Wands"}', '{"translate":":"}', '{"translate":"A sword with glowing runes along its blade. What will you make of it?"}'], Name: '{"translate":"Rune Blade Skin"}'}}}
+
+{ScriptedData: {ScriptEnabled: 1b, Scripts: [{Console: [{Long: 1710900697857L, String: "testtest2"}], Script: 'print("test");print("test2")', ScriptList: []}], ScriptLanguage: "ECMAScript"}}
